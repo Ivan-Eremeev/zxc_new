@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZXC - post</title>
+    <!-- CSS-->
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+</head>
+
+<body>
+    <main class="main">
+        <!--*** Header ***-->
+        <header class="header" id="header" data-fixed="data-fixed">
+            <div class="container">
+                <div class="header__top">
+                    <!--header logo--><a class="header__logo logo" href="./index.html"><img src="./assets/img/logo.svg" alt="логотип" width="152" height="27" /></a>
+                    <div class="header__additional-links"> <a href="#">Помощь</a><a href="#">Новости</a></div>
+                    <div class="header__connect">
+                        <div class="header__connect-text">
+                            Вы можете легко подключиться <br/>к нашему пулу, через Telgram бота</div>
+                        <button class="header__connect-btn button button--green"><i class="button__bg"></i><span>Подключиться</span>
+                            <svg class="header__connect-tg">
+                                <use xlink:href="./assets/img/sprite.svg#tg"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <!--open mobile menu-->
+                    <button class="header__open-menu-btn"></button>
+                </div>
+                <div class="header__bottom">
+                    <!--close mobile menu-->
+                    <button class="header__close-menu-btn"></button>
+                    <!--header navigation -->
+                    <nav class="header__nav nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#">База знаний</a></li>
+                            <li class="nav__item"><a href="#">Оборудование</a></li>
+                            <li class="nav__item"><a href="#">Новичкам</a></li>
+                            <li class="nav__item"><span tabindex="0">Прочее</span>
+                                <ul class="nav__inner-menu">
+                                    <li class="nav__inner-item"><a href="#">Оборудование</a></li>
+                                    <li class="nav__inner-item"><a href="#">Полезные советы</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <form class="header__search search" method="get" action="#">
+                        <input class="search__input" type="search" name="search" placeholder="Найти статью" required="required" />
+                        <button class="search__btn" type="submit"></button>
+                    </form>
+                    <div class="header__connect header__connect--mobile">
+                        <div class="header__connect-text">
+                            Вы можете легко подключиться <br/>к нашему пулу, через Telgram бота</div>
+                        <button class="header__connect-btn button button--green"><i class="button__bg"></i><span>Подключиться</span>
+                            <svg class="header__connect-tg">
+                                <use xlink:href="./assets/img/sprite.svg#tg"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--*** End Header ***-->
+        <div class="container">
+            <div class="main__content">
+                <!--*** Post Title Block ***-->
+                <section class="post-title">
+                    <h1>Что такое хешрейт в майнинге (hashrate) и в чем измеряется?</h1>
+                    <div class="post-title__indicators indicators">
+                        <div class="indicators__thanks">
+                            <div class="indicators__thanks-icon">
+                                <svg>
+                                    <use xlink:href="./assets/img/sprite.svg#bitcoin"></use>
+                                </svg>
+                            </div><span>2 благодарности <br/>за статью</span>
+                        </div>
+                        <div class="indicators__views">
+                            <svg>
+                                <use xlink:href="./assets/img/sprite.svg#eye"></use>
+                            </svg><span>18356</span>
+                        </div>
+                    </div>
+                    <p>В этой статье вы узнаете: Что такое хешрейт в майнинге, в чем измеряется хешрейт, как распределяется хешрейт, что влияет на хешрейт, сложность майнинга и вознаграждение, алгоритмы, и как они влияют на хэшрейт, статистика и оборудование, хешрейт в облаке, выбор устройств для получения высокого хешрейта, как узнать уровень хешрейта, история хэшрейта Биткойнов, текущая скорость хеширования Биткойнов и можно ли поменять свой хешрейт.</p>
+                    <ul class="post-title__tags-list">
+                        <li class="post-title__tag"><a href="#">Что такое хештрейт?</a></li>
+                        <li class="post-title__tag"><a href="#">Единица измерения</a></li>
+                        <li class="post-title__tag"><a href="#">Распределение</a></li>
+                        <li class="post-title__tag"><a href="#">Сложность майнинга и вознаграждение</a></li>
+                        <li class="post-title__tag"><a href="#">Алгоритмы</a></li>
+                        <li class="post-title__tag"><a href="#">Оборудование</a></li>
+                        <li class="post-title__tag"><a href="#">Хеш в облаке</a></li>
+                        <li class="post-title__tag"><a href="#">Выбор устройства</a></li>
+                        <li class="post-title__tag"><a href="#">Уровень хеша</a></li>
+                        <li class="post-title__tag"><a href="#">История</a></li>
+                        <li class="post-title__tag"><a href="#">Скорость</a></li>
+                        <li class="post-title__tag"><a href="#">Поменять хешрейт</a></li>
+                    </ul>
+                </section>
+                <!--*** End Post Title Block ***-->
+                <!--*** Post About Block ***-->
+                <section class="post-about">
+                    <h2>Что такое хешрейт в майнинге (hashrate) и в чем измеряется?</h2>
+                    <p><b>Хешрейт</b>(скорость хеширования) – это один из самых важных показателей в процессе майнинга криптовалюты.</p>
+                    <p>Разберем, что такое хешрейт в майнинге простыми словами.</p>
+                    <p>Это определение используется для обозначения вычислительной мощности устройств добычи криптовалюты. По этому показателю можно определить скорость решения криптографической задачи у устройства, соответственно, чем выше хешрейт, тем мощнее оборудование. Цифра хешрейта обозначает количество вычислительных действий в секунду, которое может провести майнинговое устройство.</p>
+                    <p>Обобщая вышесказанное, использование техники с высоким уровнем хешрейта приводит к более успешной добыче блоков в сети. Как известно из определения майнинга, каждый майнер, добывший блок, получает вознаграждение в качестве криптовалюты. Эта криптовалюта в свою очередь соответствует блокчейну, с которым, работает майнер.</p>
+                    <p>Главная суть определения хешрейта теперь ясна, однако этот термин также применяется майнерами в отношении нескольких направлений в майнинге: блокчейн, майнинг пулы, ноды и техника. Разберем, что термин &lt;&lt;хешрейт&gt;&gt; определяет в каждом из них.</p>
+                    <ol class="post-about__list">
+                        <li class="post-about__item row">
+                            <div class="col post-about__item-text">В случае с крипто сетями, то есть блокчейнами, мы определили, что хешрейт обозначает количество вычислений в секунду.</div>
+                            <div class="col post-about__item-image"><img loading="lazy" src="./assets/img/post-img1.jpg" alt="изображение" /></div>
+                        </li>
+                        <li class="post-about__item row">
+                            <div class="col post-about__item-text">Майнинг пулы – это сообщества, которые занимается добычей криптовалют совместно. Пул это сервер, который распределяет задачи между его участниками. Они, используя оборудование, находят решения задач, добывают блоки, и разделяют вознаграждения между собой. Хешрейт в данном случае обозначает совокупную мощность команды майнеров, то есть общую мощность оборудований участников пула.</div>
+                            <div class="col post-about__item-image"><img loading="lazy" src="./assets/img/post-img1.jpg" alt="изображение" /></div>
+                        </li>
+                    </ol>
+                </section>
+                <!--*** End Post About Block ***-->
+                <!--*** Measurement Block ***-->
+                <section class="measurement">
+                    <h2>В чем измеряется хешрейт/ Что такое мегахэш и терахэш в майнинге</h2>
+                    <p>Понимая, что такое хешрейт в майнинге, разберем, в чем и как он измеряется. Порой новые пользователи встречаются с частым появлением неких единиц. Разберемся, что такое mh s, th s, h s в майнинге простыми словами.</p>
+                    <p>Для определения вычислительной скорости используется показатель H/s, который обозначает количество операций в секунду. Разумеется, у разных блокчейнов и криптовалют присутствует отличие в количестве операций (h/s). Для этого были придуманы уточняющие единицы измерения:</p>
+                    <table class="measurement__table table">
+                        <tr>
+                            <th>Единица измерения хешрейта</th>
+                            <th>Количество операций в секунду</th>
+                        </tr>
+                        <tr>
+                            <td>MH/s - Мегахэш</td>
+                            <td>1 миллион</td>
+                        </tr>
+                        <tr>
+                            <td>GH/s - Гигахэш</td>
+                            <td>1 миллиард</td>
+                        </tr>
+                        <tr>
+                            <td>TH/s - Терахэш</td>
+                            <td>1 триллион</td>
+                        </tr>
+                        <tr>
+                            <td>EH/s - Эксахэш</td>
+                            <td>1 квинтиллион</td>
+                        </tr>
+                        <tr>
+                            <td>KH/s - Килохэш</td>
+                            <td>1 тысяча</td>
+                        </tr>
+                    </table>
+                    <div class="row">
+                        <div class="col">
+                            <h3>Величина hashrate зависит от определенных параметров, также и, как было замечено ранее, уровни хешрейта у монет различаются.</h3>
+                            <p>К примеру, у монеты ZEC хешрейт составляет 6.9 GH/s, то есть для успешного выполнения задач в сети монеты потребуется сделать 6,9 миллиардов операций в секунду.</p>
+                            <p>У Биткоина уже другой уровень, его хешрейт составляет 196.5 EH/s, то есть потребуется успешно выполнить 196 квинтиллиона операций в секунду. </p>
+                            <p>Цифра действительно очень внушительная и для выполнения соответственного количества операций потребуется очень мощное оборудование, для примера, с таким объемом тяжело будет справиться даже целой криптовалютной ферме. Именно по этой причине и были созданы пулы для совместной добычи.</p>
+                        </div>
+                        <div class="col"><img loading="lazy" src="./assets/img/post-img1.jpg" alt="изображение" />
+                            <p>Теперь разберемся подробней в единицах измерения хешрейта. Как было сказано ранее изначальная и главная единица это хеши в секунду. </p>
+                            <p>Из основных также выделяют мегахеши и терахеши. Один мегахеш равен 1000000 хешей, а для того, чтобы вычислить, сколько мегахешей содержится в других единицах, стоит умножить мегахеш на десятичный множитель, таким образом:</p>
+                        </div>
+                    </div>
+                    <div class="measurement__note">1 Гх (гигахеш) = 1000 Мх (мегахеш); 1 Зх (зетахеш) = 1.000.000.000.000.000 Мх.</div>
+                </section>
+                <!--*** End Measurement Block ***-->
+                <!--*** Find Block ***-->
+                <section class="find">
+                    <h2>Как узнать хешрейт видеокарты и процессора</h2>
+                    <p>Если видеокарта еще не была приобретена, то информации о ее характеристиках можно узнать на специальных сайтах, к примеру “What To MIne”. Разумеется, что в заводских настройках и характеристиках значения, как хешрейт нет. </p>
+                    <p>Однако, опытные майнеры и пользователи выкладывают информацию, как раз на порталах и сайтах, как выше сказанный. What to mine, также рассчитает потребление электроэнергии и потенциальную прибыль.</p>
+                    <div class="hashrate-note">
+                        <svg>
+                            <use xlink:href="./assets/img/sprite.svg#hashrate"></use>
+                        </svg><span>Хешрейт зависит от модели видеокарты и вида алгоритма, который используется для хеширования.</span>
+                    </div>
+                    <p>Порой, видео карта может не соответствовать требуемым параметрам, нужным для успешного майнинга, но с этой проблемой можно справиться, разогнав видеокарту.</p>
+                    <div class="text-on-image lazy" data-src="./assets/img/hashrate.jpg">
+                        <div>Разогнать видеокарту можно через специальные программы, к примеру, MSI Afterburner или другие. Посмотреть, как разогнать видео карту вы можете во многих обзорах, к примеру, на ютубе.</div>
+                    </div>
+                    <p>Если для майнинга, вы решите использовать мощность процессора, его хешрейт можно будет узнать с помощью специального ПО, например Claymoru CPU. Без открытых поверх окон и программ, дайте возможность данному ПО поработать, потом на специальной вкладке в программе, вы увидите ваш хешрейт.</p>
+                </section>
+                <!--*** End Find Block ***-->
+                <!--*** Post Equipment Block ***-->
+                <section class="post-equipment">
+                    <h2>Как узнать хешрейт видеокарты и процессора</h2>
+                    <p>Теперь стоит обсудить самое важное – какое оборудование используется для майнинга и какой хешрейт можно назвать выгодным.</p>
+                    <p>Начнем с оборудования.</p>
+                    <div class="row">
+                        <div class="col">
+                            <p><b>Видеокарты</b>– это пожалуй самый оптимальный вариант для майнинга в самостоятельных условиях. Видеокарты обладают высокой скоростью и производительностью и очень практичны. </p>
+                            <p>Если, к примеру, вас уже не будет так интересовать майнинг, вы всегда сможете выгодно продать видеокарту или использовать для других занятий.</p><img loading="lazy" src="./assets/img/post-img1.jpg" alt="изображение" />
+                            <p>FPGA-платы – это наименее популярный метод добычи. Эти полупроводниковые платы можно использовать совместно с обыкновенным ПК, подключая через USB порт.</p>
+                            <p>По производительности они также не особо уступают видеокартам, и у них даже есть свое преимущество, оно заключается в сниженном потреблении электроэнергии.</p>
+                            <h3>Теперь затронем тему выгодного хешрейта.</h3>
+                            <p>Для начала разберемся, что влияет на рентабельность майнинга:</p>
+                            <ul>
+                                <li>
+                                    Сложность майнинга в определенном блокчейне</li>
+                                <li>
+                                    Вознаграждения за добычу</li>
+                                <li>
+                                    Мощность оборудования</li>
+                                <li>
+                                    Цены на устройства</li>
+                                <li>
+                                    Цены на электроэнергию</li>
+                            </ul>
+                        </div>
+                        <div class="col"><img loading="lazy" src="./assets/img/post-img1.jpg" alt="изображение" />
+                            <p><b>ASIC</b>– эти устройства более профессиональны, они используются только в целях добычи криптовалюты, в отличии от видеокарт. Их производительность и скорость добычи значительно выше. Цена на ASIC, также значительно выше, чем у видеокарт </p>
+                            <p>Обычно асики не используют в единичных экземпляров, их покупают для использования на фермах. Применяются они в основном для вычисления самых сложных задач, к примеру, добыча биткоина.</p><img loading="lazy" src="./assets/img/post-img1.jpg" alt="изображение" />
+                            <p>Выгодный хешрейт потребуется рассчитать либо вручную, либо через специальные приложения. </p>
+                            <h3>Вводными данными будут:</h3>
+                            <ol>
+                                <li>
+                                    Общая скорость хэширования в сети</li>
+                                <li>
+                                    Энергопотребление</li>
+                                <li>
+                                    Комиссия майнинг пула</li>
+                                <li>
+                                    Цена за 1 кВт/ч</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                <!--*** End Post Equipment Block ***-->
+                <!--*** Cloud Block ***-->
+                <section class="cloud">
+                    <h2>Хешрейт в облаке</h2>
+                    <p>Для начала разберемся, что такое облачный майнинг, от чего он зависит и как работает.</p>
+                    <div class="row">
+                        <div class="col">
+                            <p>Относительно недавно был разработан данный метод для добычи криптовалют. С облачным майнингом вам не нужно покупать компьютерное оборудование, асики и прочие устройства. </p>
+                            <p>Вы можете взять в аренду свободную вычислительную мощность. Аренда происходит по тарифам указанных на подобных сервисах, но иногда можно встретить, что услуги оплачиваются за гига лил терахеш в долларах. </p>
+                        </div>
+                        <div class="col">
+                            <div class="important-message">
+                                <svg>
+                                    <use xlink:href="./assets/img/sprite.svg#important"></use>
+                                </svg>
+                                <h3>Важно!</h3>
+                                <div>Облачный майнинг охвачен мошенниками, так как услуги предложить легко. Настоятельно рекомендуем проверять сервисы с которыми вы собираетесь работать.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Особенно сейчас подобная модель сотрудничества выгодна для обеих сторон, так как сложность майнинга увеличивается, цена на главную криптовалюту падает, тем самым облачный майнинг становится более популярным.</p>
+                </section>
+                <!--*** End Cloud Block ***-->
+                <!--*** More Block ***-->
+                <section class="more">
+                    <h2 class="more__title">Читайте также:</h2>
+                    <div class="more__cards-list"><a class="more__card more-card" href="#">
+                            <h3 class="more-card__title">Что такое хешрейт в майнинге (hashrate) и в чем измеряется?</h3>
+                            <div class="more-card__link">Подробнее<i></i></div>
+                        </a><a class="more__card more-card" href="#">
+                            <h3 class="more-card__title">Что такое хешрейт в майнинге (hashrate) и в чем измеряется?</h3>
+                            <div class="more-card__link">Подробнее<i></i></div>
+                        </a></div>
+                    <div class="more__description">
+                        <p>Для того, чтобы удачно найти правильный сервис потребуется обращать внимание на некоторые важные моменты. Стоит выбирать среди сервисов, которые не бояться показывать главную информацию, так как инфраструктура компании облачного майнинга очень важна. На то, как давно работает сервис не так важно обращать внимание, потому что, не сложно подделать эти данные. Обращайте внимание на срок окупаемости вложений. Правильный срок идет от 6 до 12 месяцев, если вы видите недельные значения или пару месяцев, можете считать, что вы столкнулись с мошенниками.</p>
+                    </div>
+                    <div class="more__connect">
+                        <div class="more__connect-text">
+                            Подключиться к майнинг пулу легко, можно даже через Telegram</div>
+                        <button class="more__connect-btn button button--green"><i class="button__bg"></i><span>Подключиться через бота</span>
+                            <svg class="header__connect-tg">
+                                <use xlink:href="./assets/img/sprite.svg#tg"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+                <!--*** End More Block ***-->
+                <!--*** FAQ Block ***-->
+                <section class="faq">
+                    <h2 class="faq__title">Частые вопросы</h2>
+                    <ul class="faq__list">
+                        <li class="faq__item">
+                            <div class="faq__item-head">Подключиться к майнинг пулу легко, можно даже через Telegram</div>
+                            <div class="faq__item-body">
+                                <div class="faq__item-content">Для того, чтобы удачно найти правильный сервис потребуется обращать внимание на некоторые важные моменты. Стоит выбирать среди сервисов, которые не бояться показывать главную информацию, так как инфраструктура компании облачного майнинга очень важна.</div>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__item-head">Подключиться к майнинг пулу легко, можно даже через Telegram</div>
+                            <div class="faq__item-body">
+                                <div class="faq__item-content">Для того, чтобы удачно найти правильный сервис потребуется обращать внимание на некоторые важные моменты. Стоит выбирать среди сервисов, которые не бояться показывать главную информацию, так как инфраструктура компании облачного майнинга очень важна.</div>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__item-head">Подключиться к майнинг пулу легко, можно даже через Telegram</div>
+                            <div class="faq__item-body">
+                                <div class="faq__item-content">Для того, чтобы удачно найти правильный сервис потребуется обращать внимание на некоторые важные моменты. Стоит выбирать среди сервисов, которые не бояться показывать главную информацию, так как инфраструктура компании облачного майнинга очень важна.</div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <!--*** End FAQ Block ***-->
+                <!--*** Post Footer Block ***-->
+                <section class="post-footer">
+                    <div class="post-footer__head">
+                        <h2>Полезная статья?</h2>
+                        <div>Поставьте лайк автору и поделитесь в соц. сетях</div>
+                    </div>
+                    <div class="post-footer__thanks post-thanks">
+                        <div class="post-thanks__icon">
+                            <svg>
+                                <use xlink:href="./assets/img/sprite.svg#bitcoin"></use>
+                            </svg>
+                        </div>
+                        <div class="post-thanks__number">2</div>
+                        <div class="post-thanks__text">благодарности<br/>за статью</div>
+                    </div>
+                    <ul class="post-footer__socials socials">
+                        <li class="socials__item socials__item--tg"><a href="#">
+                                <svg>
+                                    <use xlink:href="./assets/img/sprite.svg#tg"></use>
+                                </svg></a></li>
+                        <li class="socials__item socials__item--vk"><a href="#">
+                                <svg>
+                                    <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                                </svg></a></li>
+                    </ul>
+                </section>
+                <!--*** End Post Footer Block ***-->
+                <!--*** Similar Block ***-->
+                <section class="similar">
+                    <h2 class="similar__title">Посмотрите похожие статьи</h2>
+                    <ul class="similar__list">
+                        <li class="similar__item"><a class="similar__card post-card" href="./single.html">
+                                <div class="post-card__image"><img loading="lazy" src="./assets/img/post-image.jpg" alt="изображение поста" /></div>
+                                <div class="post-card__category">База знаний</div>
+                                <h3 class="post-card__title">Что такое хешрейт в майнинге (hashrate) и в чем измеряется?</h3>
+                                <div class="post-card__info">
+                                    <div class="post-card__date">04.04.2022</div>
+                                    <div class="post-card__views">
+                                        <svg>
+                                            <use xlink:href="./assets/img/sprite.svg#eye"></use>
+                                        </svg><span>18356</span>
+                                    </div>
+                                    <div class="post-card__coins">
+                                        <div class="post-card__coin-icon">
+                                            <svg>
+                                                <use xlink:href="./assets/img/sprite.svg#bitcoin"></use>
+                                            </svg>
+                                        </div><span>2</span>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="similar__item"><a class="similar__card post-card" href="./single.html">
+                                <div class="post-card__image"><img loading="lazy" src="./assets/img/post-image.jpg" alt="изображение поста" /></div>
+                                <div class="post-card__category">База знаний</div>
+                                <h3 class="post-card__title">Что такое хешрейт в майнинге (hashrate) и в чем измеряется?</h3>
+                                <div class="post-card__info">
+                                    <div class="post-card__date">04.04.2022</div>
+                                    <div class="post-card__views">
+                                        <svg>
+                                            <use xlink:href="./assets/img/sprite.svg#eye"></use>
+                                        </svg><span>18356</span>
+                                    </div>
+                                    <div class="post-card__coins">
+                                        <div class="post-card__coin-icon">
+                                            <svg>
+                                                <use xlink:href="./assets/img/sprite.svg#bitcoin"></use>
+                                            </svg>
+                                        </div><span>2</span>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="similar__item"><a class="similar__card post-card" href="./single.html">
+                                <div class="post-card__image"><img loading="lazy" src="./assets/img/post-image.jpg" alt="изображение поста" /></div>
+                                <div class="post-card__category">База знаний</div>
+                                <h3 class="post-card__title">Что такое хешрейт в майнинге (hashrate) и в чем измеряется?</h3>
+                                <div class="post-card__info">
+                                    <div class="post-card__date">04.04.2022</div>
+                                    <div class="post-card__views">
+                                        <svg>
+                                            <use xlink:href="./assets/img/sprite.svg#eye"></use>
+                                        </svg><span>18356</span>
+                                    </div>
+                                    <div class="post-card__coins">
+                                        <div class="post-card__coin-icon">
+                                            <svg>
+                                                <use xlink:href="./assets/img/sprite.svg#bitcoin"></use>
+                                            </svg>
+                                        </div><span>2</span>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="similar__item"><a class="similar__card post-card" href="./single.html">
+                                <div class="post-card__image"><img loading="lazy" src="./assets/img/post-image.jpg" alt="изображение поста" /></div>
+                                <div class="post-card__category">База знаний</div>
+                                <h3 class="post-card__title">Что такое хешрейт в майнинге (hashrate) и в чем измеряется?</h3>
+                                <div class="post-card__info">
+                                    <div class="post-card__date">04.04.2022</div>
+                                    <div class="post-card__views">
+                                        <svg>
+                                            <use xlink:href="./assets/img/sprite.svg#eye"></use>
+                                        </svg><span>18356</span>
+                                    </div>
+                                    <div class="post-card__coins">
+                                        <div class="post-card__coin-icon">
+                                            <svg>
+                                                <use xlink:href="./assets/img/sprite.svg#bitcoin"></use>
+                                            </svg>
+                                        </div><span>2</span>
+                                    </div>
+                                </div>
+                            </a></li>
+                    </ul>
+                </section>
+                <!--*** End Similar Block ***-->
+                <!--*** Feedback Block ***-->
+                <section class="feedback">
+                    <form class="feedback__form form" action="#" method="post">
+                        <div class="form__field">
+                            <textarea name="your-message" placeholder="Ваш комментарий" required="required"> </textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col form__field">
+                                <input type="text" name="your-name" placeholder="Ваше имя" />
+                            </div>
+                            <div class="col form__field">
+                                <input type="email" name="your-mail" placeholder="E-mail (необязательно)" />
+                            </div>
+                        </div>
+                        <div class="row form__bottom">
+                            <div class="col">
+                                <button class="form__btn button button--green" type="submit"><i class="button__bg"></i><span>Добавить комментарий</span></button>
+                            </div>
+                            <div class="col">
+                                <div class="form__agreement">Нажимая кнопку вы соглашаетесь с <a href="#">
+                                        политикой конфиденциальности </a>и правилами сайта изложенными в <a href="#">
+                                        пользовательском соглашении </a></div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <!--*** End Feedback Block ***-->
+            </div>
+            <!--*** Sidebar Block ***-->
+            <aside class="main__sidebar sidebar">
+                <div class="sidebar__post-card">
+                    <div class="sidebar__post-image"><img src="./assets/img/post-image.jpg" alt="изображение поста" /></div>
+                    <div class="sidebar__post-category">База знаний</div>
+                </div>
+            </aside>
+            <!--*** End Sidebar Block ***-->
+        </div>
+        <!--*** Footer ***-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <!--footer logo--><a class="footer__logo logo" href="./index.html"><img loading="lazy" src="./assets/img/logo.svg" alt="логотип" width="152" height="27" /></a>
+                    <!--footer navigation -->
+                    <nav class="footer__nav nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#">База знаний</a></li>
+                            <li class="nav__item"><a href="#">Оборудование</a></li>
+                            <li class="nav__item"><a href="#">Новичкам</a></li>
+                            <li class="nav__item"><span tabindex="0">Прочее</span>
+                                <ul class="nav__inner-menu">
+                                    <li class="nav__inner-item"><a href="#">Оборудование</a></li>
+                                    <li class="nav__inner-item"><a href="#">Полезные советы</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__bottom"><a class="footer__privacy" href="#">Политика обработки персональных данных</a>
+                    <ul class="footer__socials socials">
+                        <li class="socials__item socials__item--tg"><a href="#">
+                                <svg>
+                                    <use xlink:href="./assets/img/sprite.svg#tg"></use>
+                                </svg></a></li>
+                        <li class="socials__item socials__item--vk"><a href="#">
+                                <svg>
+                                    <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!--*** End Footer ***-->
+        <div class="main__bg lazy" data-src="./assets/img/bottom-bg.png"></div>
+    </main>
+    <script src="./assets/js/jquery.min.js" defer="defer"></script>
+    <script src="./assets/js/jquery.lazy.min.js" defer="defer"></script>
+    <script src="./assets/js/slick.min.js" defer="defer"></script>
+    <script src="./assets/js/main.js" defer="defer"></script>
+</body>
+
+</html>

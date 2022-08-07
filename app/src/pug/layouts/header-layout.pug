@@ -1,0 +1,75 @@
+//*** Header ***
+header#header.header(data-fixed)
+	.container
+		.header__top
+			//header logo
+			a.header__logo.logo(href="./index.html")
+				img(src="./assets/img/logo.svg" alt="логотип" width="152" height="27")
+
+			.header__additional-links 
+				a(href="#")
+					|Помощь
+				a(href="#")
+					|Новости
+
+			.header__connect
+				.header__connect-text 
+					|Вы можете легко подключиться 
+					br 
+					|к нашему пулу, через Telgram бота
+				button.header__connect-btn.button.button--green
+					i.button__bg
+					
+					span
+						|Подключиться
+					svg.header__connect-tg
+						use(xlink:href="./assets/img/sprite.svg#tg")
+
+			//open mobile menu
+			button.header__open-menu-btn
+
+
+		.header__bottom
+			//close mobile menu
+			button.header__close-menu-btn
+
+			//header navigation 
+			nav.header__nav.nav
+				ul.nav__list
+					li.nav__item
+						a(href="#")
+							|База знаний
+					li.nav__item
+						a(href="#")
+							|Оборудование
+					li.nav__item
+						a(href="#")
+							|Новичкам
+					li.nav__item
+						span(tabindex="0")
+							|Прочее
+						ul.nav__inner-menu
+							li.nav__inner-item
+								a(href="#")
+									|Оборудование
+							li.nav__inner-item
+								a(href="#")
+									|Полезные советы
+
+			form.header__search.search(method="get" action="#")
+				input.search__input(type="search" name="search" placeholder="Найти статью" required)
+				button.search__btn(type="submit")
+
+			.header__connect.header__connect--mobile
+				.header__connect-text 
+					|Вы можете легко подключиться 
+					br 
+					|к нашему пулу, через Telgram бота
+				button.header__connect-btn.button.button--green
+					i.button__bg
+					span
+						|Подключиться
+					svg.header__connect-tg
+						use(xlink:href="./assets/img/sprite.svg#tg")
+
+//*** End Header ***

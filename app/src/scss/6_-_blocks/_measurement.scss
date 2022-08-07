@@ -1,0 +1,84 @@
+.measurement {
+	margin-top: 64px;
+
+	h2 {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.5;
+		color: #032305;
+
+		@include media(sm) {
+			font-size: 18px;
+		}
+	}
+	
+	h3 {
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 1.5;
+		color: #000000;
+	}
+
+	p {
+		margin: 21px 0;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 1.5;
+		color: #032305;
+	}
+
+	&__table {
+		margin-top: 23px;
+		margin-bottom: 32px;
+		width: 100%;
+	}
+
+	&__note {
+		margin-top: 20px;
+		padding: 32px;
+		background: linear-gradient(91.18deg, rgba(255, 255, 255, 0.2) -4.62%, rgba(87, 181, 54, 0.128) 101.22%), #f0f8ed;
+		border-radius: 6px;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 1.5;
+		text-align: center;
+		color: #276312;
+
+		@include media(sm) {
+			padding: 18px;
+			font-size: 16px;
+		}
+	}
+}
+
+.table {
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.5;
+	text-align: center;
+
+	th {
+		padding: 12px 0;
+		background-color: #57b536;
+		width: 50%;
+		font-size: 16px;
+		color: #ffffff;
+		border-radius: 0 4px 0 0;
+
+		&:first-child {
+			border-radius: 4px 0 0 0;
+		}
+	}
+	tr {
+		&:nth-child(odd) td {
+			background-color: rgba(216, 238, 208, 0.77);
+		}
+	}
+	td {
+		padding: 12px 0;
+		width: 50%;
+		background-color: #f0f8ed;
+		font-size: 15px;
+		color: #032305;
+	}
+}

@@ -1,0 +1,75 @@
+.find {
+	margin-top: 64px;
+
+	h2 {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.5;
+		color: #032305;
+
+		@include media(sm) {
+			font-size: 18px;
+		}
+	}
+
+	p {
+		margin: 21px 0;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 1.5;
+		color: #032305;
+	}
+}
+
+.hashrate-note {
+	margin-top: 5px;
+	padding: 24px 70px 24px 27px;
+	display: flex;
+	align-items: center;
+	background: #f0f8ed;
+	border-radius: 6px;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #276312;
+
+	svg {
+		flex-shrink: 0;
+		margin-right: 29px;
+		width: 40.07px;
+		height: 46px;
+	}
+	
+		
+	@include media(sm) {
+		padding: 20px;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		svg {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.text-on-image {
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 294px;
+	width: 100%;
+	background-size: cover;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.5;
+	color: #276312;
+
+	div {
+		padding: 18px 16px;
+		background: #ffffff;
+		border-radius: 4px;
+	}
+}

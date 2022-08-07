@@ -1,0 +1,46 @@
+//*** Footer ***
+footer.footer
+	.container
+		.footer__top
+			//footer logo
+			a.footer__logo.logo(href="./index.html")
+				img(loading="lazy" src="./assets/img/logo.svg" alt="логотип" width="152" height="27")
+
+			//footer navigation 
+			nav.footer__nav.nav
+				ul.nav__list
+					li.nav__item
+						a(href="#")
+							|База знаний
+					li.nav__item
+						a(href="#")
+							|Оборудование
+					li.nav__item
+						a(href="#")
+							|Новичкам
+					li.nav__item
+						span(tabindex="0")
+							|Прочее
+						ul.nav__inner-menu
+							li.nav__inner-item
+								a(href="#")
+									|Оборудование
+							li.nav__inner-item
+								a(href="#")
+									|Полезные советы
+
+		.footer__bottom
+			a.footer__privacy(href="#")
+				|Политика обработки персональных данных
+
+			ul.footer__socials.socials
+				li.socials__item.socials__item--tg
+					a(href="#")
+						svg
+							use(xlink:href="./assets/img/sprite.svg#tg")
+				li.socials__item.socials__item--vk
+					a(href="#")
+						svg
+							use(xlink:href="./assets/img/sprite.svg#vk")
+
+//*** End Footer ***

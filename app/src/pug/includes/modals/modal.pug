@@ -1,0 +1,16 @@
+//-#modal-feedback.modal
+	.modal__wrapper
+		.modal__container
+			h3.modal__title.title
+				|Оставьте заявку
+			p.modal__subtitle
+				|и мы свяжается с вами в кратчайшие сроки:
+
+			form#modal-feedback-form.modal__form.form(action="#" method="post")
+				.form__field
+					label.form__label
+						input.form__input(type="text" name="name" placeholder="Ваше имя")
+				button.form__send-btn.button(type="submit")
+					|Оставить заявку
+
+			button.modal__close-btn(data-modal-close aria-label="Close modal") 

@@ -1,0 +1,81 @@
+.banner-subscribe {
+	margin-top: 50px;
+
+	&__wrapper {
+		position: relative;
+		padding: 44px 48px 42px;
+		background-color: #2ea3e6;
+		border-radius: 6px;
+
+		@include media(xs) {
+			padding-bottom: 140px;
+		}
+	}
+
+	&__bg {
+		position: absolute;
+		// bottom: -51px;
+		bottom: 0;
+		// right: 88px;
+		right: 7.699%;
+		transform: translateY(19%);
+		display: block;
+		// width: 434px;
+		width: 37.97%;
+		// h268	
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		&::before {
+			content: '';
+			padding-top: 61.75%;
+			display: block;
+		}
+		
+		@include media(sm) {
+			width: 26%;
+		}
+		@include media(xs) {
+			width: 250px;
+			right: 50%;
+			transform: translate(125px, 19%);
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: (44 /36);
+		color: $white;
+
+		@include media(sm) {
+			font-size: 24px;
+		}
+	}
+
+	&__description {
+		margin-top: 14px;
+		max-width: 50%;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 1.5;
+		color: $white;
+		
+		@include media(sm) {
+			max-width: initial;
+		}
+		@include media(xs) {
+			margin-top: 20px;
+		}
+	}
+
+	&__btn {
+		margin-top: 17px;
+		width: 162px;
+		height: 46px;
+		
+		@include media(xs) {
+			margin-top: 30px;
+		}
+	}
+}

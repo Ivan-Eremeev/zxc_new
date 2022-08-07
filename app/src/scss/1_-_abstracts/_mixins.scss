@@ -1,0 +1,60 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}/#{$file_name}.woff") format("woff"),
+			url("../fonts/#{$file_name}/#{$file_name}.woff2") format("woff2"),
+			url("../fonts/#{$file_name}/#{$file_name}.ttf") format("opentype");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@mixin lg {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+@mixin md {
+	@media screen and (max-width: 992px) {
+		@content;
+	}
+}
+@mixin sm {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+@mixin xs {
+	@media screen and (max-width: 576px) {
+		@content;
+	}
+}
+
+@mixin media($screenWidth) {
+	@if $screenWidth == "lg" {
+		@media screen and (max-width: 1200px) {
+			@content;
+		}
+	}
+	@else if $screenWidth == "md" {
+		@media screen and (max-width: 992px) {
+			@content;
+		}
+	}
+	@else if $screenWidth == "sm" {
+		@media screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@else if $screenWidth == "xs" {
+		@media screen and (max-width: 576px) {
+			@content;
+		}
+	}
+	@else {
+		@media screen and (max-width: $screenWidth) {
+			@content;
+		}
+	}
+}

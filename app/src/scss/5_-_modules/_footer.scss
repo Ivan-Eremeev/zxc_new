@@ -1,0 +1,145 @@
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footer {
+   position: relative;
+   padding-bottom: 77px;
+
+   &__top {
+      padding: 0 25px 0;
+      display: flex;
+      align-items: center;
+      background: $white;
+      border-radius: 15px;
+
+      @include media(md) {
+         padding: 25px;
+         flex-direction: column;
+      }
+   }
+
+   &__logo {
+   }
+
+   &__nav {
+      margin-left: 110px;
+      margin-right: auto;
+
+      .nav__item a, .nav__item span {
+         padding-top: 26px;
+         padding-bottom: 26px;
+      }
+
+      .nav__inner-menu {
+         top: initial;
+         bottom: 100%;
+         border-radius: 4px 4px 0 0;
+         box-shadow: 0px -12px 20px rgba(14, 31, 53, 0.12);
+      }
+      
+      @include media(md) {
+         margin-left: 0;
+         margin-right: 0;
+         margin-top: 20px;
+			.nav__list {
+				flex-direction: column;
+				align-items: center;
+			}
+         .nav__list>.nav__item:not(:last-child) {
+            margin-right: 0;
+         }
+      }
+   }
+
+   &__bottom {
+      padding-top: 18px;
+      display: flex;
+      align-items: center;
+      
+      @include media(xs) {
+         padding-top: 30px;
+         flex-direction: column;
+      }
+   }
+
+   &__privacy {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: (18 / 15);
+      text-decoration: none;
+      color: #80957b;
+
+      &:hover {
+         color: #80957b;
+         text-decoration: underline;
+      }
+      
+      @include media(xs) {
+         text-align: center;
+      }
+   }
+
+   &__socials {
+      margin-left: auto;
+      
+      @include media(xs) {
+         margin-top: 30px;
+         margin-left: 0;
+      }
+   }
+}
+
+.socials {
+   display: flex;
+   align-items: center;
+
+   &__item {
+      width: 50px;
+      height: 50px;
+      border-radius: 6px;
+      overflow: hidden;
+
+      &:not(:last-child) {
+         margin-right: 18px;
+      }
+
+      a {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         height: 100%;
+         text-decoration: none;
+         background-color: #c3e0cb;
+         transition: background-color 0.25s ease-out;
+
+         &:hover {
+            text-decoration: none;
+            background-color: $white;
+
+            svg {
+               fill: #35a535;
+            }
+         }
+      }
+
+      svg {
+         fill: $white;
+         transition: fill 0.25s ease-out;
+      }
+
+      &--tg {
+         svg {
+            width: 21px;
+            height: 28px;
+         }
+      }
+
+      &--vk {
+         svg {
+            width: 27px;
+            height: 41px;
+         }
+      }
+   }
+}

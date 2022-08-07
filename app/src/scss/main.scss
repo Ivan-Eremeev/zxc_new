@@ -1,0 +1,55 @@
+// File : main.scss (Default Theme)
+// All "Abstracts" specific SASS partials
+
+@import '1_-_abstracts/colors'; 
+@import '1_-_abstracts/fonts';
+@import '1_-_abstracts/mixins';
+@import '1_-_abstracts/sprite';
+
+// All "Vendors" specific SASS partials
+
+// @import '2_-_vendors/smart-grid';
+@import '2_-_vendors/vendors';
+@import '2_-_vendors/overrides';
+
+// All "Base" specific SASS partials
+
+@import '3_-_base/fontfaces';
+@import '3_-_base/glob';
+
+// All "Objects" specific SASS partials
+
+@import '4_-_objects/button';
+@import '4_-_objects/form';
+@import '4_-_objects/nav';
+@import '4_-_objects/logo';
+@import '4_-_objects/post-card';
+@import '4_-_objects/posts-slider';
+
+// All "Modules" specific SASS partials
+
+@import '5_-_modules/header';
+// @import '5_-_modules/modal';
+@import '5_-_modules/footer';
+@import '5_-_modules/sidebar';
+
+// All "Blocks" specific SASS partials
+
+@import '6_-_blocks/popular';
+@import '6_-_blocks/knowledge';
+@import '6_-_blocks/equipment';
+@import '6_-_blocks/banner-subscribe';
+@import '6_-_blocks/update';
+@import '6_-_blocks/about-mining';
+
+@import '6_-_blocks/post-title';
+@import '6_-_blocks/post-about';
+@import '6_-_blocks/measurement';
+@import '6_-_blocks/find';
+@import '6_-_blocks/post-equipment';
+@import '6_-_blocks/cloud';
+@import '6_-_blocks/more';
+@import '6_-_blocks/faq';
+@import '6_-_blocks/post-footer';
+@import '6_-_blocks/similar';
+@import '6_-_blocks/feedback';
