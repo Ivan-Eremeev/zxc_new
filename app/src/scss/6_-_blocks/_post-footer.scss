@@ -87,22 +87,22 @@
 		border-radius: 4px;
 		transition: 0.3s;
 
-		&::before {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			display: block;
-			width: 22px;
-			height: 22px;
-			border: 2px solid $green;
-			border-radius: 50%;
-			transition: 0.3s;
-		}
+		// &::before {
+		// 	content: "";
+		// 	position: absolute;
+		// 	top: 50%;
+		// 	left: 50%;
+		// 	transform: translate(-50%, -50%);
+		// 	display: block;
+		// 	width: 22px;
+		// 	height: 22px;
+		// 	border: 2px solid $green;
+		// 	border-radius: 50%;
+		// 	transition: 0.3s;
+		// }
 
 		svg {
-			width: 9px;
+			width: 22px;
 			stroke: $green;
 			fill: transparent;
 			transition: 0.3s;
