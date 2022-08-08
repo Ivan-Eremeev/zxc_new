@@ -30,6 +30,11 @@
 		font-size: 15px;
 		color: #000000;
 		cursor: pointer;
+		transition: 0.1s;
+
+		&:hover {
+			color: $green;
+		}
 		
 		@include media(sm) {
 			padding: 20px;

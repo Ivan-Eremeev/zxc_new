@@ -88,23 +88,23 @@ $(document).ready(function () {
 	 * Menu fixation
 	 */
 
-	let headerFixation = function () {
-		let header = $(".header");
-		let body = $("body");
+	// let headerFixation = function () {
+	// 	let header = $(".header");
+	// 	let body = $("body");
 
-		if ($(window).scrollTop() > 100) {
-			header.addClass("header--fixed");
-			body.css('padding-top', header.outerHeight() + 'px');
-		} else {
-			if (!$('html').hasClass('modal-opened')) {
-				header.removeClass("header--fixed");
-				body.css('padding-top', '');
-			}
-		}
-	}
+	// 	if ($(window).scrollTop() > 100) {
+	// 		header.addClass("header--fixed");
+	// 		body.css('padding-top', header.outerHeight() + 'px');
+	// 	} else {
+	// 		if (!$('html').hasClass('modal-opened')) {
+	// 			header.removeClass("header--fixed");
+	// 			body.css('padding-top', '');
+	// 		}
+	// 	}
+	// }
 
-	headerFixation();
-	$(window).on("scroll", headerFixation);
+	// headerFixation();
+	// $(window).on("scroll", headerFixation);
 
 
 	/**

@@ -67,32 +67,54 @@
 		}
 
 		& > span {
-			&::after {
-				content: "";
-				position: absolute;
-				top: 50%;
-				left: calc(100% + 2px);
-				transform: translateY(-50%);
-				display: block;
-				width: 12px;
-				height: 11px;
-				background-image: linear-gradient(to bottom, transparent 66.666%, #d9d9d9 66.666%, #d9d9d9 100%);
-				background-size: 8px 3px;
-				background-position-x: center;
-				background-repeat: repeat-y;
+			// &::after {
+			// 	content: "";
+			// 	position: absolute;
+			// 	top: 50%;
+			// 	left: calc(100% + 2px);
+			// 	transform: translateY(-50%);
+			// 	display: block;
+			// 	width: 12px;
+			// 	height: 11px;
+			// 	background-image: linear-gradient(to bottom, transparent 66.666%, #d9d9d9 66.666%, #d9d9d9 100%);
+			// 	background-size: 8px 3px;
+			// 	background-position-x: center;
+			// 	background-repeat: repeat-y;
+			// }
+
+			svg {
+				margin-left: 5px;
+				flex-shrink: 0;
+				fill: #000;
+				transition: 0.3s;
 			}
 
 			&:focus,
 			&:focus-visible {
 				// outline: 1px solid #949494;
 
-				&::after {
-					outline: none;
-				}
+				// &::after {
+				// 	outline: none;
+				// }
+
 			}
 		}
 
 		&:hover {
+
+			color: $green;
+
+			span {
+				
+				&:before {
+					background-color: $green;
+				}
+
+				svg {
+					fill: $green;
+				}
+			}
+
 			.nav__inner-menu {
 				opacity: 1;
 				pointer-events: visible;
